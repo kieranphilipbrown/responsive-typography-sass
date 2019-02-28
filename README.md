@@ -1,6 +1,8 @@
-## 🥤Gulp Boilerplate
+## 🥤Responsive Sass Fonts
 
-A basic Gulp boilerplate to get developing locally with a few helpful tools already set up.
+A basic visual example of settings up responsive Sass fonts.
+
+Simply resize the browser to see how the font sizes change at each breakpoint.
 
 Tasks included:
 

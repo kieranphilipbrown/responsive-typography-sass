@@ -1,5 +1,5 @@
 /*------------------*
-# Headings
+# Responsive Fonts
 *------------------*/
 
 /*
@@ -12,29 +12,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
- * Heading font sizes
+ * Heading, paragraph, ul, ol font sizes
 */
 
+p, ul, ol {
+    @include font-size($p-font-sizes);
+}
+
 h1 {
-    font-size: $h1-size;
+    @include font-size($h1-font-sizes);
 }
 
 h2 {
-    font-size: $h2-size;
+    @include font-size($h2-font-sizes);
 }
 
 h3 {
-    font-size: $h3-size;
+    @include font-size($h3-font-sizes);
 }
 
+
 h4 {
-    font-size: $h4-size;
+    @include font-size($h4-font-sizes);
 }
 
 h5 {
-    font-size: $h5-size;
+    @include font-size($h5-font-sizes);
 }
 
+
 h6 {
-    font-size: $h6-size;
+    @include font-size($h6-font-sizes);
 }

@@ -1,0 +1,66 @@
+/*------------------*
+# Sass Font Maps & Mixin
+*------------------*/
+
+// Sass Maps
+$h1-font-sizes: (
+  null  : 26px,
+  480px : 30px,
+  640px : 40px,
+  1024px: 50px
+);
+
+$h2-font-sizes: (
+  null  : 24px,
+  480px : 28px,
+  640px : 35px,
+  1024px: 45px
+);
+
+$h3-font-sizes: (
+  null  : 22px,
+  480px : 26px,
+  640px : 30px,
+  1024px: 40px
+);
+
+$h4-font-sizes: (
+  null  : 20px,
+  480px : 24px,
+  640px : 32px,
+  1024px: 36px
+);
+
+$h5-font-sizes: (
+  null  : 18px,
+  480px : 22px,
+  640px : 26px,
+  1024px: 32px
+);
+
+$h6-font-sizes: (
+  null  : 16px,
+  480px : 20px,
+  640px : 22px,
+  1024px: 28px
+);
+
+$p-font-sizes: (
+  null  : 15px,
+  480px : 16px,
+  640px : 17px,
+  1024px: 19px
+);
+
+@mixin font-size($fs-map) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            font-size: $fs-font-size;
+        }
+        @else {
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
+    }
+}
