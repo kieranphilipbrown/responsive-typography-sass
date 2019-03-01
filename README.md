@@ -1,4 +1,4 @@
-## 🥤Responsive Sass Fonts
+## Responsive Sass 💁 Fonts
 
 A basic visual example of settings up responsive Sass fonts.
 
